@@ -2,8 +2,21 @@
 <html>
 <head>
   <title>PO SmartAI Bot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to PO SmartAI Bot v3</h1>
+  <div class="container">
+    <h1>PO SmartAI Signal Bot</h1>
+    <select id="pair">
+      <option value="AUDJPY">AUD/JPY</option>
+      <option value="AUDCHF">AUD/CHF</option>
+      <option value="AEDCAD">AED/CAD</option>
+      <option value="AEDCNY">AED/CNY</option>
+      <option value="CADJPY">CAD/JPY</option>
+    </select>
+    <button onclick="getSignal()">Get Signal</button>
+    <div id="result"></div>
+  </div>
+  <script src="signal.js"></script>
 </body>
 </html>
